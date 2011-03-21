@@ -1,11 +1,11 @@
 # Streaming w hadoopie
-Streaming jest to hadoop-owe narzêdzie umo¿lwiaj±ce wykorzystanie dowolnych plików wykonywalnych jako funkcje map i reduce.
+Streaming jest to hadoop-owe narzÄ™dzie umoÅ¼liwiajÄ…ce wykorzystanie dowolnych plikÃ³w wykonywalnych jako funkcje map i reduce.
 
 Wymagania:
-1. Dzia³aj±cy hadoop
-2. Python (na potrzeby przyk³adu)
+1. DziaÅ‚ajÄ…cy hadoop
+2. Python (na potrzeby przykÅ‚adu)
 
 Test:
-1. Wywo³anie skryptu testOgolny.sh w celu weryfikacji dzia³ania skryptów
-2. Ustawienie w pliku testHadoop.sh zmiennej HADOOP_HOME i wywo³anie go.
+1. WywoÅ‚anie skryptu testOgolny.sh w celu weryfikacji dziaÅ‚ania skryptÃ³w
+2. Ustawienie w pliku testHadoop.sh zmiennej HADOOP_HOME i wywoÅ‚anie go.
 
