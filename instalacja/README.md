@@ -14,6 +14,7 @@ single-instace
 > ssh-keygen -t dsa -P '' -f ~/.ssh/id_dsa 
 
 > cat ~/.ssh/id_dsa.pub >> ~/.ssh/authorized_keys
+
 * hadoopa z poziomu folderu domowego mozemy uruchomic poleceniem:
 > ./hadoop-0.21.0/bin/start-all.sh
 * a zatrzymać:
