@@ -27,8 +27,8 @@ Instalacja Hadoop w środowisku klastrowym nie różni się znacząco od instala
 * parametr 'fs.default.name' i 'mapred.job.tracker', powinny jako wartość miec wpisane FQDN maszyny na której bedą umieszczone namenode oraz jobtracker (w naszym wypadku jest to jedna maszyna)
 * zmienna 'hadoop.tmp.dir' powinna wskazywac na istniejacy folder z pełnymi prawami dla użytkownika który uruchamia procesy hadoopa, ważne jest dopisanie ${user.name} na końcu ścieżki - dzięki temu zadania wystawione przez różnych użytkowników nie bedą się mieszały
 * parametr 'dfs.replication' definiuje na ilu węzłach ma być replikowany klastrowy system plików
-* plik masters zawiera liste serwerów (każdy w nowej linii), które zarządzaja replikacja i podziałem pracy w klastrze
-* plik slaves zawiera liste wszystkich węzłów na ktorych mogą byc uruchamiane zadania (pośród slaves mogą być umieszczone maszyny z pliku masters)
+* plik conf/masters zawiera liste serwerów (każdy w nowej linii), które zarządzaja replikacja i podziałem pracy w klastrze
+* plik conf/slaves zawiera liste wszystkich węzłów na ktorych mogą byc uruchamiane zadania (pośród slaves mogą być umieszczone maszyny z pliku masters)
 * jeżeli wszystkie powyższe parametry zostały ustawione (wszystkie zmieniane pliki można zobaczyć w folderze 'cluster') poprawnie generujemy klucze ssh
 > ssh-keygen -t dsa -P '' -f ~/.ssh/id_dsa && cat ~/.ssh/id_dsa.pub >> ~/.ssh/authorized_keys
 * inicjalizujemy klastrowy system plików
@@ -38,4 +38,4 @@ Instalacja Hadoop w środowisku klastrowym nie różni się znacząco od instala
 * hadoopa w wydaniu rozproszonym uruchamiamy z maszyny typu master za pomocą polecenia
 > ./hadoop-0.21.0/bin/start-dfs.sh && ./hadoop-0.21.0/bin/start-mapred.sh
 * bieżący podglad na prace serwera możemy uzyskać wchodząc na adres http://foo:50030
-
+* porty jakie należy odblokować na firewallu to tcp/54310 tcp/54311 tcp/50010 tcp/8020 tcp/50020 tcp/50100 tcp/50030 tcp/50070 tcp/8021 tcp/9001 tcp/8012
