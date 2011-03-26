@@ -25,4 +25,4 @@ if __name__ == "__main__":
 		n = int(words[1])
 		p  = Process(target=wynik,args= (m,n))
 		p.start()
-
+		p.join()
