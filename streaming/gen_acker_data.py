@@ -2,7 +2,7 @@
 
 import random
 
-n = 500
+n = 50
 
 file = open('ackerData.txt','w')
 

@@ -3,7 +3,7 @@
 import sys
 from multiprocessing import Process
 
-sys.setrecursionlimit(90000)
+sys.setrecursionlimit(50000)
 
 def ack(m, n):
 	if m == 0:
@@ -23,6 +23,4 @@ if __name__ == "__main__":
 		words = line.split()
 		m = int(words[0])
 		n = int(words[1])
-		p  = Process(target=wynik,args= (m,n))
-		p.start()
-		p.join()
+		wynik(m,n)
