@@ -1,10 +1,12 @@
 #!/usr/bin/env ruby
 
-N = 25000.to_i
+N = 1000.to_i
 
 i = k = ns = 0
 k1 = 1
 n,a,d,t,u = [1,0,1,0,0]
+
+pi = []
 
 loop do
   k += 1
@@ -20,10 +22,7 @@ loop do
     if d > u
       ns = ns*10 + t
       i += 1
-      if i % 10 == 0
-        puts "#{ns.to_s.rjust(10, '0')}"
-        ns = 0
-      end
+      pi << ns if ns.to_s.size > 1 
       break if i >= N
    
       a -= d*t
@@ -31,4 +30,15 @@ loop do
       n *= 10
     end
   end
+end
+
+
+ARGF.each do |line|
+    pi.each do |p|
+        if line.match(p.to_s)
+            puts "#{p}"
+        else
+            break
+        end
+    end
 end

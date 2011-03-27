@@ -2,7 +2,7 @@
     
 pi_hash = Hash.new(0)
 ARGF.each do |line|
-    line.chomp.split("").each do |n|
+    line.chomp.split().each do |n|
         pi_hash[n] = pi_hash[n].to_i + 1    
     end
 end
