@@ -29,4 +29,16 @@
   		<name>mapred.map.tasks</name>
   		<value>8</value>
 	</property>
+	<property>
+		<name>mapred.tasktracker.tasks.maximum</name>
+		<value>24</value>
+	</property>
+	<property>
+		<name>mapred.tasktracker.map.tasks.maximum</name>
+		<value>16</value>
+	</property>
+	<property>
+		<name>mapred.tasktracker.reduce.tasks.maximum</name>
+		<value>16</value>
+	</property>
 </configuration>
