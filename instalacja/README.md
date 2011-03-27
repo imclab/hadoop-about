@@ -27,6 +27,7 @@ Instalacja Hadoop w środowisku klastrowym nie różni się znacząco od instala
 * parametr 'fs.default.name' i 'mapred.job.tracker', powinny jako wartość miec wpisane FQDN maszyny na której bedą umieszczone namenode oraz jobtracker (w naszym wypadku jest to jedna maszyna)
 * zmienna 'hadoop.tmp.dir' powinna wskazywac na istniejacy folder z pełnymi prawami dla użytkownika który uruchamia procesy hadoopa, ważne jest dopisanie ${user.name} na końcu ścieżki - dzięki temu zadania wystawione przez różnych użytkowników nie bedą się mieszały
 * parametr 'dfs.replication' definiuje na ilu węzłach ma być replikowany klastrowy system plików
+* parametry 'mapred.reduce.tasks', 'mapred.map.tasks', 'mapred.tasktracker.tasks.maximum', 'mapred.tasktracker.map.tasks.maximum', 'mapred.tasktracker.reduce.tasks.maximum' odpowiadaja za ilość wątków reduce i map na poszczególnych węzłach oraz maksymalne ilość wątków na klastrze
 * plik conf/masters zawiera liste serwerów (każdy w nowej linii), które zarządzaja replikacja i podziałem pracy w klastrze
 * plik conf/slaves zawiera liste wszystkich węzłów na ktorych mogą byc uruchamiane zadania (pośród slaves mogą być umieszczone maszyny z pliku masters)
 * jeżeli wszystkie powyższe parametry zostały ustawione (wszystkie zmieniane pliki można zobaczyć w folderze 'cluster') poprawnie generujemy klucze ssh
