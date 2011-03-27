@@ -21,4 +21,12 @@
 		<name>mapred.child.java.opts</name>
 		<value>-Xmx512m</value>
 	</property>
+	<property>
+  		<name>mapred.reduce.tasks</name>
+  		<value>8</value>
+	</property>
+	<property>
+  		<name>mapred.map.tasks</name>
+  		<value>8</value>
+	</property>
 </configuration>
