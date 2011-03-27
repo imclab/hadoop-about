@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 import sys
 from multiprocessing import Process
@@ -14,7 +14,7 @@ def ack(m, n):
 		return ack(m-1,ack(m,n-1))
 
 def wynik(m,n):
-	print "%s\t%s\t%s" % (m,n,ack(m,n))
+	print("%s\t%s\t%s" % (m,n,ack(m,n)))
 
 if __name__ == "__main__":
 	
