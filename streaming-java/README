@@ -9,9 +9,9 @@ jar -cvf MapReduce.jar -C mapreduce_classes/ .
 
 Wymagania:
 
-* Dzia³ajacy hadoop
+* Dzialajacy hadoop
 
 Test:
 
-* Ustawienie w pliku testHadoop.sh zmiennej HADOOP_HOME i wywo³anie go.
+* Ustawienie w pliku testHadoop.sh zmiennej HADOOP_HOME i wywolanie go.
 
