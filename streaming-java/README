@@ -1,0 +1,17 @@
+#Zliczanie slow
+Program zlicza slowa znajdujace sie w pliach book[1-4].txt
+
+Tworzenie pliku jar
+mkdir mapreduce_classes
+javac -classpath hadoop-0.20.2-core.jar -d mapreduce_classes MapReduce.java
+jar -cvf MapReduce.jar -C mapreduce_classes/ .
+
+
+Wymagania:
+
+* Dzia³ajacy hadoop
+
+Test:
+
+* Ustawienie w pliku testHadoop.sh zmiennej HADOOP_HOME i wywo³anie go.
+
