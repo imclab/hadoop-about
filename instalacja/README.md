@@ -1,7 +1,7 @@
 Instalacja Hadoop'a
 ===================
 
-single-instace
+single-instance
 --------------
 * ściągamy hadoop ze [strony](http://hadoop.apache.org/common/releases.html) fundacji apache (w momencie pisania tego tekstu stabilne wydanie to 0.21.0)
 > wget http://ftp.tpnet.pl/vol/d1/apache//hadoop/core/hadoop-0.21.0/hadoop-0.21.0.tar.gz
