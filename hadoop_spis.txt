@@ -1,0 +1,16 @@
+Tytu³: HADOOP
+
+1. Idea MapReduce
+2. Funkcja map i reduce
+3. Schemat MapReduce
+4. Hadoop definicja
+5. Twórca Hadoop
+6. Idea Hadoop
+7. Czêœci sk³adowe Hadoop
+	-Hadoop Common
+	-HDFS
+	-MapReduce
+8. Dodatkowe czêœci sk³adowe
+9. Krótkie omówienie procesu instalacji na sigmie
+10. Przyk³ady u¿ycia
+11. Firmy korzystaj¹ce z Hadoop
