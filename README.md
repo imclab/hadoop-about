@@ -21,3 +21,4 @@ Pushing branch to remote:
 git checkout 2011
 git push origin 2011
 ```
+Zobacz też GitHub:Help, [Remote](http://help.github.com/remotes/).
